@@ -1,0 +1,35 @@
+/*
+Text Domain: pennatheme
+Theme Name: Penna Theme
+Theme URI: http://www.arteluz.art.br
+Description: Tema customizado para website do André Penna.
+Author: Lucas Luoni
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/*****************************************************************************/
+
+/* ****************************** 
+Estilos Gerais
+****************************** */
+@charset "UTF-8";
+
+@import './variables';
+@import './normalize';
+@import './base';
+@import './interface';
+// Partials
+@import './modules/header';
+// @import './modules/modal';
+@import './modules/introhome';
+@import './modules/introandre';
+@import './modules/nossasrotas';
+@import './modules/parallax';
+@import './modules/mediaqueries';
+// @import './modules/aisca';
+// @import './modules/joao';
+@import './modules/contato';
+@import './modules/spinner';
+@import './modules/footer';

@@ -1,0 +1,28 @@
+#intro_andre {
+  & h2 {
+    @extend %blueHeadings;
+    margin-bottom: 2rem !important;
+  }
+  & h3 {
+    @extend %blueHeadings;
+    margin-bottom: 0 !important;
+  }
+  & img {
+    border: 1px solid #bfbfbf;
+  }
+  & .btn {
+    width: 140px !important;
+  }
+  & #logo-surfing-sem-fim {
+    width: 418px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+#intro_andre div span {
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}

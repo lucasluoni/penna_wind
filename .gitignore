@@ -1,0 +1,10 @@
+# Exclude these files from the git repo
+wp-content/backup/*
+wp-content/cache/*
+wp-content/upgrade/*
+wp-content/uploads/*
+
+# Hidden system files
+*.DS_Store
+*[Tt]humbs.db
+*.Trashes

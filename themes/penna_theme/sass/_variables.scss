@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'SF Pro Medium';
+  src: url('../fonts/SF-Pro-Text-Medium.otf') format('otf');
+}
+@font-face {
+  font-family: 'SF Pro Semibold';
+  src: url('../fonts/SF-Pro-Text-Semibold.otf') format('otf');
+}
+@font-face {
+  font-family: 'SF Pro Bold';
+  src: url('../fonts/SF-Pro-Text-Bold.otf') format('otf');
+}
+
+// SASS Color Variables
+$dark-grey: #202020;
+$red: rgb(198, 56, 40);
+$dark-red: rgb(154, 44, 32);
+$blue: #1377ae;
+$off-white: #fff;
+$black: rgba(0, 0, 0, 0.7);
+$beige: #f8f4ee;
+
+$text-color: $dark-grey;
+$text-white: $off-white;
+$btn-background: $red;
+
+%blueHeadings {
+  color: $blue;
+  font-weight: bolder;
+  letter-spacing: 0px;
+  line-height: 1;
+}
+
+%red {
+  color: $red;
+}
+
+%btnBGHover {
+  background-color: $dark-red;
+}

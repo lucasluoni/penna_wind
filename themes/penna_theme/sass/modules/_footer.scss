@@ -1,0 +1,12 @@
+footer {
+  background-color: $blue;
+  color: $off-white;
+  & a {
+    color: $off-white;
+    text-decoration: none;
+    &:hover {
+      color: $off-white;
+      text-decoration: underline;
+    }
+  }
+}

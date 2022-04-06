@@ -1,0 +1,40 @@
+/* ****************************** 
+SOBRE O João
+****************************** */
+
+.page-id-14 {
+  background: url(images/banner-joao-xxl.webp) center top no-repeat;
+  background-size: cover;
+}
+
+.mapaBZ {
+  background: url(images/mapa-buzios-full.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .page-id-14 {
+    background: url(images/banner-joao-xl.webp) center top no-repeat;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .page-id-14 {
+    background: url(images/banner-joao-xl.webp) center top no-repeat;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-id-14 {
+    background: url(images/banner-joao-md.webp) center top no-repeat;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page-id-14 {
+    background: url(images/banner-joao-sm.webp) center top no-repeat;
+  }
+}

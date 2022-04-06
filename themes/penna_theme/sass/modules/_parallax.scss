@@ -1,0 +1,21 @@
+/* parallax BANNER */
+
+%parallax {
+  /* Set a specific height */
+  min-height: 445px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax-lencois-home {
+  @extend %parallax;
+  background-image: url('images/home-parallax-01.jpg');
+}
+
+#f-one-banner-home {
+  @extend %parallax;
+  background-image: url('images/f-one-parallax.jpg');
+}

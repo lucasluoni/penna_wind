@@ -1,0 +1,48 @@
+$color-btn-default: $red;
+$color-btn-text: $off-white;
+
+// the percentage means an invisible class
+%btn {
+  padding: 6px 25px;
+  border-radius: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-btn-text;
+  width: 140px !important;
+}
+
+.btn-solido {
+  @extend %btn;
+  background-color: $color-btn-default;
+  border: 2px solid $color-btn-default;
+  font-weight: bold;
+  &:hover {
+    @extend %btnBGHover;
+    border: 2px solid $color-btn-default;
+    color: $color-btn-text;
+  }
+}
+
+.fundoBranco:hover {
+  @extend %btn;
+  @extend .btn-solido;
+  background: $color-btn-text;
+  color: $color-btn-default;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  background-color: $color-btn-default;
+}
+
+.btn-transparente {
+  @extend %btn;
+  background-color: none;
+  border: 2px solid $color-btn-default;
+  font-weight: bold;
+  &:hover {
+    background-color: $color-btn-default;
+    color: $color-btn-text;
+  }
+}

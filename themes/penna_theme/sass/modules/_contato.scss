@@ -1,0 +1,16 @@
+/* ****************************** 
+CONTATO
+****************************** */
+
+#contato {
+  & h2 {
+    @extend %blueHeadings;
+    margin-bottom: 1rem;
+  }
+  & span {
+    white-space: nowrap;
+  }
+  & p {
+    margin-bottom: 0.5rem;
+  }
+}

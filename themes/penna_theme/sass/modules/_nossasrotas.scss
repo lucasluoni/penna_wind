@@ -1,0 +1,49 @@
+#nossas_rotas {
+  & h2 {
+    @extend %blueHeadings;
+    margin-bottom: 1.3rem !important;
+  }
+  & h3 {
+    font-size: 1.4rem;
+    letter-spacing: 0rem;
+    margin-bottom: 0 !important;
+    font-weight: bolder;
+    @extend %red !optional;
+  }
+  & p {
+    // margin-bottom: 1.2rem;
+    // text-align: center;
+  }
+  & img {
+    border: 1px solid #bfbfbf;
+  }
+  & .btn {
+    width: 140px;
+    & :hover {
+      border: 1px solid blue;
+    }
+    // & .btn#load_more {
+    //   width: 145px !important;
+    // }
+  }
+  & #logo-surfing-sem-fim {
+    width: 418px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+  }
+  & .card-header {
+    background-color: white !important;
+  }
+  & .card-body a {
+    margin: 0 auto !important;
+  }
+  & .spinner.rotas {
+    margin: 0 0 10px 0;
+  }
+}
+#nossas_rotas div span {
+  & p:last-child {
+    margin-bottom: 0;
+  }
+}

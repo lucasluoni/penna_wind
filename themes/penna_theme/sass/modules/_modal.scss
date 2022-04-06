@@ -1,0 +1,22 @@
+.modal-header .btn-close {
+  color: white;
+}
+
+.modal-body {
+  background: #ede2ce;
+}
+
+.modal-footer {
+  background: $off-white;
+}
+
+.modal-footer .form-control {
+  background: none;
+}
+.modal-footer .form-control input {
+  background: white;
+}
+
+.modal-footer .btn {
+  padding: 6px 25px 7px 25px;
+}

@@ -1,0 +1,14 @@
+$item-color: $red;
+$item-color-hover: $off-white;
+
+.sigaNos ul {
+  list-style-type: none;
+  li a {
+    display: inline;
+    font-size: 1.7rem;
+    color: $item-color;
+    &:hover {
+      color: $item-color-hover;
+    }
+  }
+}

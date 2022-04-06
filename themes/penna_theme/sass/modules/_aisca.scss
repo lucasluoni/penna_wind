@@ -1,0 +1,24 @@
+/* ****************************** 
+  SOBRE A Isca
+ ****************************** */
+
+body.page-id-12 {
+  background: url(images/mapa-buzios-header.webp) center center repeat-y;
+  h3 {
+    color: $dark-grey;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body.page-id-12 {
+    background: url(images/banner-sobre-a-isca-xl.webp) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body.page-id-12 {
+    background: url(images/banner-sobre-a-isca-sm.webp) center top no-repeat;
+    background-size: cover;
+  }
+}

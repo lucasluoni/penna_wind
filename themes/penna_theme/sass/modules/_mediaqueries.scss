@@ -1,0 +1,52 @@
+/* ****************************** 
+  Media Queries para os banners com parallax
+ ****************************** */
+
+/* grid-breakpoints
+xxl: 1400px 
+xl: 1200px,
+lg: 992px,
+md: 768px,
+sm: 576px,
+xs: 0,
+xs: 0, */
+
+@media only screen and (max-device-width: 1200px) {
+}
+
+@media only screen and (max-device-width: 992px) {
+  .hero-text p#description {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .hero-text p#description {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-device-width: 576px) {
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: auto;
+  }
+  .hero-text p#description {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  // .hero-text p#description {
+  //   display: none;
+  // }
+}
+
+@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+}
+
+@media only screen and (max-device-width: 640px) and (orientation: landscape) {
+}
+
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
+}
