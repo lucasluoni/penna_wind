@@ -1,10 +1,10 @@
 <?php while ( have_posts() ) : the_post(); //Open the loop ?>
 
   <section>
-    <div id="parallax-lencois-home"></div>
+    <div id="parallax-topo-rotas"></div>
   </section>
 
-  <section id="nossas_rotas" class="container py-5 content">
+  <section id="nossas_rotas" class="container pt-5 content">
 
     <div class="row mb-4">
       <h2 class="w-75 text-center mx-auto mb-5"><?php wp_title(''); ?></h2>
@@ -13,7 +13,7 @@
 
     <div class="row flex flex-row">
 
-    <?php 
+    	<?php 
 					$args = array(
 							'post_type' => 'rotas',
 							'post_status' => 'publish',
@@ -54,7 +54,11 @@
 
     </div>
 
+		<div id="mais_rotas" class="row flex flex-row"></div>
+
 		<div id="loading" class="mx-auto" style="width:60px;display:block;"></div>
+
+		</section>
 
 		<?php
 		// don't display the button if there are not enough posts
@@ -62,13 +66,11 @@
 			echo '<button 
 							id="load_more" 
 							type="button" 
-							class="btn btn-solido w-50 mx-auto d-flex"
+							class="btn btn-solido w-50 mx-auto d-flex mb-4"
 							style="width: 145px !important;">
 							mais rotas
 						</button>'; // you can use <a> as well
 		?>
-
-  </section>
 
   <section><div id="f-one-banner-home"></div></section>
 

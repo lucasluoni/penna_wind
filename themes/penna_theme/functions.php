@@ -194,7 +194,7 @@ add_action( 'wp_enqueue_scripts', 'wp_register_scripts' );
 
 
 /****************************************************************************
-5.Botão Load More Posts de Eventos na Home (loop-front-page.php)
+5.Botão Load More Posts de Rotas na Tela do Cardápio de Rotas (includes/loop-nossas-rotas.php)
 ****************************************************************************/
 //USe wp_ajax & wp_ajax_nopriv to enable ajax action "load_posts_by_ajax"
 //With this defined, we can request on the javascript side the action "load_posts_by_ajax"
@@ -217,24 +217,24 @@ function load_posts_by_ajax_callback() {
         ?>
         <?php while ( $my_posts->have_posts() ) : $my_posts->the_post() ?>
 
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5 mx-auto">
-					<div id=post-<?php the_ID(); ?> <?php post_class('card'); ?>>
-						<?php echo get_the_post_thumbnail('post-thumbnail'); ?>
-						<div class="card-header d-flex flex-row justify-content-center">
-							<h3 class="mb-0"><?php the_title(); ?></h3>
-						</div>
-						<div class="card-body p-4 bg-white">
-							<span class="d-flex flex-column">
-								<?php the_excerpt(); ?>
-								<a 
-								class="btn btn-solido w-50 mx-auto" 
-								href="<?php echo home_url(); ?>/about">
-								saiba mais
-							</a>
-						</span>	
-						</div>
-					</div>            
-				</div>           
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-5">
+						<div id=post-<?php the_ID(); ?> <?php post_class('card'); ?>>
+							<?php echo the_post_thumbnail( 'thumbnail', ['class' => 'img-fluid thumbRota'] ); ?>
+							<div class="card-header d-flex flex-row justify-content-center">
+								<h3 class="mb-0"><?php the_title(); ?></h3>
+							</div>
+							<div class="card-body p-4 bg-white">
+								<span class="d-flex flex-column">
+									<?php the_excerpt(); ?>
+									<a 
+									class="btn btn-solido w-50 mx-auto" 
+									href="<?php echo home_url(); ?>/about">
+									saiba mais
+									</a>
+								</span>	
+							</div>
+						</div>            
+					</div>					
                 
         <?php endwhile; 
         wp_reset_postdata(); 

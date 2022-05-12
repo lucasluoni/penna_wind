@@ -26,38 +26,39 @@
 
   });
 
-  window.addEventListener('load', (event) => {
-    //Hide spinnerLoader
-    const hideLoader = () => {
-      let loader = document.querySelector('.spinner-wrapper')
-      loader.style.visibility = 'hidden'
-    }
-    setTimeout(hideLoader, 2000) 
-  });
+  // window.addEventListener('load', (event) => {
+  //   //Hide spinnerLoader
+  //   const hideLoader = () => {
+  //     let loader = document.querySelector('.spinner-wrapper')
+  //     loader.style.visibility = 'hidden'
+  //   }
+  //   setTimeout(hideLoader, 2000) 
+  // });
 
-  // Load More Rotas (loop-nossas-rotas.php) ////////////////////////////////////////////////////// -->   
-  var ajaxurl = `<?php echo admin_url( 'admin-ajax.php' ); ?>`;
-  var page = 2;
-  jQuery(function($) {
-  $('body').on('click', '#load_more', function() {
-  // alert("clicou no btn!!");
-  $('#loading').stop().hide().fadeIn('fast');
-  //$('.loadmore').hide().fadeOut('fast');
-  $('#loading').html('<div style="margin:0 auto 20px auto" class="spinner rotas"></div>');
-    var data = {
-      'action': 'load_posts_by_ajax',
-      'page': page,
-      'security': '<?php echo wp_create_nonce("load_more_posts"); ?>'
-    };
+    // Load More Rotas (loop-nossas-rotas.php) ////////////////////////////////////////////////////// -->   
+  //   var ajaxurl = "<?php echo admin_url( 'admin-ajax.php' ); ?>";
+  //   var page = 2;
+  //   jQuery(function($) {
+  //     $('body').on('click', '#load_more', function() {
+  //     // alert("clicou no btn!!");
+  //     $('#loading').stop().hide().fadeIn('fast');
+  //     //$('.loadmore').hide().fadeOut('fast');
+  //     $('#loading').html('<div style="margin:0 auto 20px auto" class="spinner rotas"></div>');
+  //     var data = {
+  //       'action': 'load_posts_by_ajax',
+  //       'page': page,
+  //       'security': '<?php echo wp_create_nonce("load_more_posts"); ?>'
+  //     };
 
-    console.log(ajaxurl)
-    $.post(ajaxurl, data, function (response) {
-    $('#loading').hide().fadeOut('fast');
-    //$('.loadmore').stop().hide().fadeIn('fast');    
-      $('#nossas_rotas').append(response);
-      page++;
-    });
-  });
-  });
+  //     console.log(ajaxurl)
+  //     $.post(ajaxurl, data, function (response) {
+  //       $('#loading').hide().fadeOut('fast');
+  //       //$('.loadmore').stop().hide().fadeIn('fast');    
+  //       $('#nossas_rotas').append(response);
+  //       page++;
+  //     });
+        
+  //   });
+  // });
 
 })();

@@ -585,7 +585,7 @@ a.nav-link.active:before {
 #nossas_rotas img {
   border: 1px solid #bfbfbf; }
 #nossas_rotas .btn {
-  width: 140px !important; }
+  width: 140px; }
   #nossas_rotas .btn :hover {
     border: 1px solid blue; }
 #nossas_rotas #logo-surfing-sem-fim {
@@ -597,14 +597,17 @@ a.nav-link.active:before {
   background-color: white !important; }
 #nossas_rotas .card-body a {
   margin: 0 auto !important; }
+#nossas_rotas .spinner.rotas {
+  margin: 0 0 10px 0; }
 
 #nossas_rotas div span p:last-child {
   margin-bottom: 0; }
 
 /* parallax BANNER */
-#parallax-lencois-home, #f-one-banner-home {
-  /* Set a specific height */
-  min-height: 445px;
+#parallax-lencois-home, #parallax-topo-rotas, #f-one-banner-home {
+  width: 100%;
+  height: 0;
+  padding-top: 30.9%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -612,6 +615,9 @@ a.nav-link.active:before {
   background-size: cover; }
 
 #parallax-lencois-home {
+  background-image: url("images/home-parallax-01.jpg"); }
+
+#parallax-topo-rotas {
   background-image: url("images/home-parallax-01.jpg"); }
 
 #f-one-banner-home {
